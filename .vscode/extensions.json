@@ -7,10 +7,10 @@
         "christian-kohler.npm-intellisense",
         "formulahendry.auto-rename-tag",
         "mikestead.dotenv",
+        "unifiedjs.vscode-mdx",
         "eamodio.gitlens",
         "wix.vscode-import-cost",
         "DavidAnson.vscode-markdownlint",
         "github.vscode-github-actions"
-    ],
-    "unwantedRecommendations": []
+    ]
 }
