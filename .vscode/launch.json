@@ -2,6 +2,14 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Launch Chrome",
+            "request": "launch",
+            "type": "chrome",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+        },
+
+        {
             "name": "Next.js: debug server-side",
             "type": "node-terminal",
             "request": "launch",
@@ -29,7 +37,7 @@
             "name": "Next.js: debug client-side (email)",
             "type": "chrome",
             "request": "launch",
-            "url": "http://localhost:3003"
+            "url": "http://localhost:3005"
         },
         {
             "name": "Next.js: debug client-side (app)",
@@ -41,7 +49,7 @@
             "name": "Next.js: debug client-side (studio)",
             "type": "chrome",
             "request": "launch",
-            "url": "http://localhost:3005"
+            "url": "http://localhost:3007"
         },
         {
             "name": "Next.js: debug full stack",

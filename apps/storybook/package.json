@@ -1,0 +1,7 @@
+{
+    "name": "storybook",
+    "version": "0.0.0",
+    "scripts": {
+        "dev": "next dev --port 3006"
+    }
+}
