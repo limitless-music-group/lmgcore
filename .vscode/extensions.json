@@ -9,7 +9,8 @@
         "mikestead.dotenv",
         "eamodio.gitlens",
         "wix.vscode-import-cost",
-        "DavidAnson.vscode-markdownlint"
+        "DavidAnson.vscode-markdownlint",
+        "github.vscode-github-actions"
     ],
     "unwantedRecommendations": []
 }
