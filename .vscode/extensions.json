@@ -1,0 +1,15 @@
+{
+    "recommendations": [
+        "aaron-bond.better-comments",
+        "biomejs.biome",
+        "Prisma.prisma",
+        "bradlc.vscode-tailwindcss",
+        "christian-kohler.npm-intellisense",
+        "formulahendry.auto-rename-tag",
+        "mikestead.dotenv",
+        "eamodio.gitlens",
+        "wix.vscode-import-cost",
+        "DavidAnson.vscode-markdownlint"
+    ],
+    "unwantedRecommendations": []
+}
