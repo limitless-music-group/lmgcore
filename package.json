@@ -40,7 +40,7 @@
     "ultracite": "^6.3.10",
     "vitest": "^4.0.15"
   },
-  "packageManager": "pnpm@10.24.0",
+  "packageManager": "pnpm@10.25.0",
   "engines": {
     "node": ">=18"
   },

@@ -1,0 +1,27 @@
+---
+alwaysApply: true
+globs: packages/database/**/*
+---
+
+# Prisma Folder - Database Schemas and Client
+
+The `/prisma` folder contains the database schema and seed data. This follows Prisma's multi-file schema approach for better organization.
+
+## Structure Overview
+
+``` tsx
+packages/database/
+|--prisma/
+|  |--schema/           # Multi-file Prisma schema
+|  |--schema.prisma     # Main schema configuration
+|  |--user.prisma       # User models
+|--index.ts             # Database client configuration
+|--keys.ts              # Environment Variable verification
+|--seed/
+|  ├── index.ts         # Main seed file
+   ├── users.ts         # User seed data
+```
+
+### Model Files
+
+Each entity has its own `.prisma` file for better organization
