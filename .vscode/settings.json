@@ -32,16 +32,34 @@
   "typescript.tsdk": "node_modules/typescript/lib",
   "tailwindCSS.experimental.configFile": "packages/design-system/styles/globals.css",
   "editor.indentSize": "tabSize",
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit",
+    "source.sortImports": "explicit",
+    "source.fixAll.ts": "explicit",
+    "source.fixAll.markdownlint": "explicit",
+    "source.addMissingImports.ts": "explicit",
+    "source.fixAll.biome": "explicit"
+  },
   "cSpell.words": [
     "autoincrement",
     "basehub",
+    "Elysia",
+    "elysiajs",
+    "Fumadocs",
     "limitlessmusicgroup",
     "Liveblocks",
     "lmgcore",
     "neondatabase",
+    "orpc",
+    "Oxlint",
     "POSTHOG",
+    "Qwik",
     "shadcn",
+    "Tauri",
+    "transferrables",
+    "Turborepo",
     "ultracite",
+    "Uncurried",
     "vcpu"
   ]
 }

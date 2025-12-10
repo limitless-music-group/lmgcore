@@ -1,23 +1,28 @@
 {
-  "name": "@packages/collaboration",
+  "name": "@packages/feature-flags",
   "version": "0.0.0",
   "private": true,
   "scripts": {
     "clean": "git clean -xdf .cache .turbo dist node_modules",
     "typecheck": "tsc --noEmit --emitDeclarationOnly false"
   },
+  "peerDependencies": {
+    "next": "16.0.8"
+  },
   "dependencies": {
+    "@packages/analytics": "workspace:*",
+    "@packages/auth": "workspace:*",
+    "@packages/design-system": "workspace:*",
     "@t3-oss/env-nextjs": "^0.13.8",
-    "@liveblocks/client": "^3.11.1",
-    "@liveblocks/node": "^3.11.1",
-    "@liveblocks/react": "^3.11.1",
-    "react": "19.2.1",
-    "server-only": "^0.0.1"
+    "@vercel/toolbar": "^0.1.41",
+    "flags": "^4.0.2",
+    "react": "19.2.1"
   },
   "devDependencies": {
     "@packages/typescript-config": "workspace:*",
     "@types/node": "25.0.0",
     "@types/react": "19.2.7",
-    "@types/react-dom": "19.2.3"
+    "@types/react-dom": "19.2.3",
+    "typescript": "^5.9.3"
   }
 }

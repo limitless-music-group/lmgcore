@@ -1,9 +1,3 @@
----
-description: Ultracite Rules - AI-Ready Formatter and Linter
-globs: "**/*.{ts,tsx,js,jsx,json,jsonc,html,vue,svelte,astro,css,yaml,yml,graphql,gql,md,mdx,grit}"
-alwaysApply: false
----
-
 # Ultracite Code Standards
 
 This project uses **Ultracite**, a zero-config Biome preset that enforces strict code quality standards through automated formatting and linting.
@@ -99,11 +93,9 @@ Write code that is **accessible, performant, type-safe, and maintainable**. Focu
 - Use Server Components for async data fetching instead of async Client Components
 
 **React 19+:**
-
 - Use ref as a prop instead of `React.forwardRef`
 
 **Solid/Svelte/Vue/Qwik:**
-
 - Use `class` and `for` attributes (not `className` or `htmlFor`)
 
 ---
