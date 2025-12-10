@@ -1,12 +1,12 @@
 {
-    "name": "@packages/shared",
+    "name": "@packages/observability",
     "version": "0.0.0",
     "private": true,
     "main": "./index.ts",
     "types": "./index.ts",
-    "dependencies": {
-        "@packages/database": "workspace:*",
-        "next": "^16.0.8"
+    "scripts": {
+        "clean": "git clean -xdf .cache .turbo dist node_modules",
+        "typecheck": "tsc --noEmit --emitDeclarationOnly false"
     },
     "devDependencies": {
         "@packages/typescript-config": "workspace:*"
