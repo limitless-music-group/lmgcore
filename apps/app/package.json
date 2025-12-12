@@ -13,24 +13,25 @@
         "@packages/auth": "workspace:*",
         "@packages/database": "workspace:*",
         "@packages/design-system": "workspace:*",
+        "@packages/shared": "workspace:*",
         "@t3-oss/env-nextjs": "0.13.8",
         "elysia": "1.4.18",
-        "next": "16.0.8",
-        "react": "19.2.1",
-        "react-dom": "19.2.1",
+        "next": "16.0.10",
+        "react": "19.2.3",
+        "react-dom": "19.2.3",
         "server-only": "0.0.1",
         "zustand": "5.0.9"
     },
     "devDependencies": {
         "@packages/typescript-config": "workspace:*",
-        "@types/node": "25.0.0",
+        "@types/node": "25.0.1",
         "@types/react": "19.2.7",
         "@types/react-dom": "^19.2.3",
-        "@tailwindcss/postcss": "^4.1.17",
+        "@tailwindcss/postcss": "^4.1.18",
         "@tailwindcss/typography": "^0.5.19",    
-        "@vitejs/plugin-react": "^4.2.1",
-        "dotenv": "^16.4.5",
+        "@vitejs/plugin-react": "^5.1.2",
+        "dotenv": "^17.2.3",
         "postcss": "8.5.6",
-        "tailwindcss": "4.1.17"
+        "tailwindcss": "4.1.18"
     }
 }

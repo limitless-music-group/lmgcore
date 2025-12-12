@@ -4,4 +4,11 @@ type ProviderProps = {
     readonly children: ReactNode
 }
 
-export const Providers = ({ children }: ProviderProps) => {}
+export const Providers = ({ children }: ProviderProps) => {
+    return (
+        <div>
+            Providers
+            {children}
+        </div>
+    )
+}

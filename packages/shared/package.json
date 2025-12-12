@@ -5,8 +5,8 @@
     "main": "./index.ts",
     "types": "./index.ts",
     "dependencies": {
-        "@packages/database": "workspace:*",
-        "next": "^16.0.8"
+        "next": "^16.0.10",
+        "react": "19.2.3"
     },
     "devDependencies": {
         "@packages/typescript-config": "workspace:*"

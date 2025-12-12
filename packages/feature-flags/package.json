@@ -16,11 +16,11 @@
     "@t3-oss/env-nextjs": "^0.13.8",
     "@vercel/toolbar": "^0.1.41",
     "flags": "^4.0.2",
-    "react": "19.2.1"
+    "react": "19.2.3"
   },
   "devDependencies": {
     "@packages/typescript-config": "workspace:*",
-    "@types/node": "25.0.0",
+    "@types/node": "25.0.1",
     "@types/react": "19.2.7",
     "@types/react-dom": "19.2.3",
     "typescript": "^5.9.3"

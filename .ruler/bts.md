@@ -56,7 +56,7 @@ Available addons you can add:
 
 - **Documentation**: Starlight, Fumadocs
 - **Linting**: Biome, Oxlint, Ultracite
-- **Other**: Ruler, Turborepo, PWA, Tauri, Husky
+- **Other**: Ruler, Turborepo, PWA, Tauri
 
 You can also add web deployment configurations like Cloudflare Workers support.
 

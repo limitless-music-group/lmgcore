@@ -11,13 +11,13 @@
   },
   "dependencies": {
     "@packages/design-system": "workspace:*",
-    "next": "^16.0.8",
-    "react": "^19.2.1",
-    "react-dom": "^19.2.1"
+    "next": "^16.0.10",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
   },
   "devDependencies": {
     "@packages/typescript-config": "workspace:*",
-    "@types/node": "^25.0.0",
+    "@types/node": "^25.0.1",
     "@types/react": "19.2.7",
     "@types/react-dom": "19.2.3",
     "typescript": "5.9.3"
