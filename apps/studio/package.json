@@ -1,13 +1,13 @@
 {
-    "name": "studio",
-    "version": "0.0.0",
-    "scripts": {
-        "dev": "prisma studio --schema ../../packages/database/prisma/schema.prisma --port 3007",
-        "clean": "git clean -xdf .cache .turbo dist node_modules",
-        "typecheck": "tsc --noEmit --emitDeclarationOnly false"    
-    },
-    "devDependencies": {
-        "@packages/typescript-config": "workspace:*",
-        "prisma": "7.1.0"
-    }
+  "name": "studio",
+  "version": "0.0.0",
+  "devDependencies": {
+    "@packages/typescript-config": "workspace:*",
+    "prisma": "7.1.0"
+  },
+  "scripts": {
+    "clean": "git clean -xdf .cache .turbo dist node_modules",
+    "dev": "prisma studio --schema ../../packages/database/prisma/schema.prisma --port 3007",
+    "typecheck": "tsc --noEmit --emitDeclarationOnly false"
+  }
 }

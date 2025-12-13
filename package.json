@@ -4,10 +4,54 @@
   "bin": {
     "lmgcore": "dist/index.js"
   },
+  "dependencies": {
+    "effect": "^3.19.11",
+    "zod": "^4.1.13"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.3.8",
+    "@playwright/test": "^1.57.0",
+    "@testing-library/react": "16.3.0",
+    "@turbo/gen": "^2.6.3",
+    "@types/node": "^25.0.1",
+    "syncpack": "^13.0.4",
+    "tsup": "^8.5.1",
+    "turbo": "^2.6.3",
+    "typescript": "^5.9.3",
+    "ultracite": "^6.4.0",
+    "vitest": "^4.0.15"
+  },
+  "engines": {
+    "node": ">=18"
+  },
   "files": [
     "dist/index.js"
   ],
+  "packageManager": "pnpm@10.25.0",
+  "pnpm": {
+    "overrides": {
+      "parse5": "^7.2.1"
+    }
+  },
   "private": true,
+  "scripts": {
+    "analyze": "turbo analyze",
+    "boundaries": "turbo boundaries",
+    "build": "turbo build",
+    "bump-deps": "npx npm-check-updates --deep -u -x recharts && pnpm install",
+    "bump-ui": "npx shadcn@latest add --all overwrite -c packages/design-system",
+    "check": "npx ultracite@latest check",
+    "clean": "git clean -xdf node_modules",
+    "dev": "turbo dev",
+    "fix": "npx ultracite@latest fix",
+    "fix-mismatches": "syncpack fix-mismatches",
+    "format-package-json": "syncpack format",
+    "dev:generate": "cd packages/database && npx prisma format && npx prisma generate",
+    "migrate": "cd packages/database && npx prisma format && npx prisma generate && npx prisma db push",
+    "test": "turbo test",
+    "translate": "turbo translate"
+  },
+  "type": "module",
   "workspaces": [
     "apps/*",
     "packages/*",
@@ -15,45 +59,5 @@
     "tools/*",
     "infrastructure/*",
     "docs/*"
-  ],
-  "scripts": {
-    "build": "turbo build",
-    "dev": "turbo dev",
-    "check": "npx ultracite@latest check",
-    "fix": "npx ultracite@latest fix",
-    "test": "turbo test",
-    "analyze": "turbo analyze",
-    "translate": "turbo translate",
-    "boundaries": "turbo boundaries",
-    "bump-deps": "npx npm-check-updates --deep -u -x recharts && pnpm install",
-    "bump-ui": "npx shadcn@latest add --all overwrite -c packages/design-system",
-    "migrate": "cd packages/database && npx prisma format && npx prisma generate && npx prisma db push",
-    "clean": "git clean -xdf node_modules"
-  },
-  "devDependencies": {
-    "@biomejs/biome": "^2.3.8",
-    "@turbo/gen": "^2.6.3",
-    "@types/node": "^25.0.1",
-    "@testing-library/react": "16.3.0",
-    "@playwright/test": "^1.57.0",
-    "tsup": "^8.5.1",
-    "turbo": "^2.6.3",
-    "typescript": "5.9.3",
-    "ultracite": "^6.4.0",
-    "vitest": "^4.0.15"
-  },
-  "packageManager": "pnpm@10.25.0",
-  "engines": {
-    "node": ">=18"
-  },
-  "dependencies": {
-    "effect": "^3.19.11",
-    "zod": "^4.1.13"
-  },
-  "pnpm": {
-    "overrides": {
-      "parse5": "^7.2.1"
-    }
-  },
-  "type": "module"
+  ]
 }

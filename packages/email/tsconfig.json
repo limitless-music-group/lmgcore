@@ -1,8 +1,8 @@
 {
-    "extends": "@packages/typescript-config/nextjs.json",
-    "compilerOptions": {
-      "baseUrl": "."
-    },
-    "include": ["**/*.ts", "**/*.tsx"],
-    "exclude": ["node_modules"]
+  "extends": "@packages/typescript-config/nextjs.json",
+  "compilerOptions": {
+    "baseUrl": "."
+  },
+  "include": ["**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
 }

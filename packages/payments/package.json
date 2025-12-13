@@ -1,5 +1,9 @@
 {
-    "name": "@packages/payments",
-    "version": "0.0.0",
-    "private": true
+  "name": "@packages/payments",
+  "dependencies": {},
+  "devDependencies": {
+    "@packages/typescript-config": "workspace:*"
+  },
+  "private": true,
+  "scripts": {}
 }

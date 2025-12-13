@@ -1,37 +1,37 @@
 {
-    "name": "app",
-    "version": "0.0.0",
-    "scripts": {
-        "dev": "next dev --port 3000",
-        "build": "next build",
-        "start": "next start",
-        "check-types": "next typegen && tsc --noEmit",
-        "run-mock-server": "tsx ./mock-server.ts"
-    },
-    "dependencies": {
-        "@packages/analytics": "workspace:*",
-        "@packages/auth": "workspace:*",
-        "@packages/database": "workspace:*",
-        "@packages/design-system": "workspace:*",
-        "@packages/shared": "workspace:*",
-        "@t3-oss/env-nextjs": "0.13.8",
-        "elysia": "1.4.18",
-        "next": "16.0.10",
-        "react": "19.2.3",
-        "react-dom": "19.2.3",
-        "server-only": "0.0.1",
-        "zustand": "5.0.9"
-    },
-    "devDependencies": {
-        "@packages/typescript-config": "workspace:*",
-        "@types/node": "25.0.1",
-        "@types/react": "19.2.7",
-        "@types/react-dom": "^19.2.3",
-        "@tailwindcss/postcss": "^4.1.18",
-        "@tailwindcss/typography": "^0.5.19",    
-        "@vitejs/plugin-react": "^5.1.2",
-        "dotenv": "^17.2.3",
-        "postcss": "8.5.6",
-        "tailwindcss": "4.1.18"
-    }
+  "name": "app",
+  "version": "0.0.0",
+  "dependencies": {
+    "@packages/analytics": "workspace:*",
+    "@packages/auth": "workspace:*",
+    "@packages/database": "workspace:*",
+    "@packages/design-system": "workspace:*",
+    "@packages/shared": "workspace:*",
+    "@t3-oss/env-nextjs": "^0.13.8",
+    "elysia": "1.4.18",
+    "next": "^16.0.10",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "server-only": "^0.0.1",
+    "zustand": "5.0.9"
+  },
+  "devDependencies": {
+    "@packages/typescript-config": "workspace:*",
+    "@tailwindcss/postcss": "^4.1.18",
+    "@tailwindcss/typography": "^0.5.19",
+    "@types/node": "^25.0.1",
+    "@types/react": "19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.2",
+    "dotenv": "^17.2.3",
+    "postcss": "8.5.6",
+    "tailwindcss": "^4.1.18"
+  },
+  "scripts": {
+    "build": "next build",
+    "check-types": "next typegen && tsc --noEmit",
+    "dev": "next dev --port 3000",
+    "run-mock-server": "tsx ./mock-server.ts",
+    "start": "next start"
+  }
 }

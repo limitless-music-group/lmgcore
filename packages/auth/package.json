@@ -1,27 +1,24 @@
 {
   "name": "@packages/auth",
-  "version": "0.0.0",
-  "private": true,
-  "type": "module",
-  "exports": {
-    "./server": "./server.ts"
-  },
-  "scripts": {
-    "clean": "git clean -xdf .cache .turbo dist node_modules",
-    "typecheck": "tsc --noEmit --emitDeclarationOnly false"
-  },
   "dependencies": {
     "@packages/database": "workspace:*",
     "@t3-oss/env-nextjs": "^0.13.8",
-    "better-auth": "1.4.6",
-    "react": "19.2.3",
+    "better-auth": "^1.4.6",
+    "next-themes": "^0.4.6",
+    "react": "^19.2.3",
     "server-only": "^0.0.1"
   },
   "devDependencies": {
     "@packages/typescript-config": "workspace:*",
-    "@types/node": "25.0.1",
+    "@types/node": "^25.0.1",
     "@types/react": "19.2.7",
-    "@types/react-dom": "19.2.3",
+    "@types/react-dom": "^19.2.3",
     "typescript": "^5.9.3"
-  }
+  },
+  "private": true,
+  "scripts": {
+    "clean": "git clean -xdf .cache .turbo dist node_modules",
+    "typecheck": "tsc --noEmit --emitDeclarationOnly false"
+  },
+  "type": "module"
 }

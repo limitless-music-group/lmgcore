@@ -1,43 +1,43 @@
 export type DalReturn<T, E extends DalError = DalError> =
   | {
-    success: true
-    data: T
-  }
+      success: true;
+      data: T;
+    }
   | {
-    success: false
-    error: E
-  }
+      success: false;
+      error: E;
+    };
 
 export type DalError =
   | {
-    type: 'no-user'
-  }
+      type: "no-user";
+    }
   | {
-    type: 'no-access'
-  }
+      type: "no-access";
+    }
   | {
-    type: 'prisma-error'
-  }
+      type: "prisma-error";
+    }
   | {
-    type: 'unknown-error'
-    error: unknown
-  }
+      type: "unknown-error";
+      error: unknown;
+    };
 
 export class ThrowableDalError extends Error {
-    dalError: DalError
+  dalError: DalError;
 
-    constructor(dalError: DalError) {
-        super("ThrowableDalError")
-        this.dalError = dalError
-    }
+  constructor(dalError: DalError) {
+    super("ThrowableDalError");
+    this.dalError = dalError;
+  }
 }
 
 export function createSuccessReturn<T>(data: T): DalReturn<T> {
-    return { success: true, data }
+  return { success: true, data };
 }
 
 export function createErrorReturn<E extends DalError>(
-    error: E
+  error: E
 ): DalReturn<never> {
-    return { success: false, error }
+  return { success: false, error };
 }

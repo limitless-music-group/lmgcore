@@ -1,14 +1,12 @@
-import type { ReactNode } from 'react';
+import type { ReactNode } from "react";
 
 type ProviderProps = {
-    readonly children: ReactNode
-}
+  readonly children: ReactNode;
+};
 
-export const Providers = ({ children }: ProviderProps) => {
-    return (
-        <div>
-            Providers
-            {children}
-        </div>
-    )
-}
+export const Providers = ({ children }: ProviderProps) => (
+  <div>
+    Providers
+    {children}
+  </div>
+);

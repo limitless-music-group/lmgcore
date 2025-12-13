@@ -1,14 +1,13 @@
 {
-    "name": "@packages/email",
-    "version": "0.0.0",
-    "private": true,
-    "main": "./index.ts",
-    "types": "./index.ts",
-    "scripts": {
-        "clean": "git clean -xdf .cache .turbo dist node_modules",
-        "typecheck": "tsc --noEmit --emitDeclarationOnly false"
-    },
-    "devDependencies": {
-        "@packages/typescript-config": "workspace:*"
-    }
+  "name": "@packages/email",
+  "devDependencies": {
+    "@packages/typescript-config": "workspace:*"
+  },
+  "main": "./index.ts",
+  "private": true,
+  "scripts": {
+    "clean": "git clean -xdf .cache .turbo dist node_modules",
+    "typecheck": "tsc --noEmit --emitDeclarationOnly false"
+  },
+  "types": "./index.ts"
 }

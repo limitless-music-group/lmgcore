@@ -1,23 +1,23 @@
 {
   "name": "@packages/collaboration",
   "version": "0.0.0",
-  "private": true,
-  "scripts": {
-    "clean": "git clean -xdf .cache .turbo dist node_modules",
-    "typecheck": "tsc --noEmit --emitDeclarationOnly false"
-  },
   "dependencies": {
-    "@t3-oss/env-nextjs": "^0.13.8",
     "@liveblocks/client": "^3.11.1",
     "@liveblocks/node": "^3.11.1",
     "@liveblocks/react": "^3.11.1",
-    "react": "19.2.3",
+    "@t3-oss/env-nextjs": "^0.13.8",
+    "react": "^19.2.3",
     "server-only": "^0.0.1"
   },
   "devDependencies": {
     "@packages/typescript-config": "workspace:*",
-    "@types/node": "25.0.1",
+    "@types/node": "^25.0.1",
     "@types/react": "19.2.7",
-    "@types/react-dom": "19.2.3"
+    "@types/react-dom": "^19.2.3"
+  },
+  "private": true,
+  "scripts": {
+    "clean": "git clean -xdf .cache .turbo dist node_modules",
+    "typecheck": "tsc --noEmit --emitDeclarationOnly false"
   }
 }

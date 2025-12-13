@@ -1,14 +1,20 @@
 {
-    "name": "@packages/shared",
-    "version": "0.0.0",
-    "private": true,
-    "main": "./index.ts",
-    "types": "./index.ts",
-    "dependencies": {
-        "next": "^16.0.10",
-        "react": "19.2.3"
-    },
-    "devDependencies": {
-        "@packages/typescript-config": "workspace:*"
-    }
+  "name": "@packages/shared",
+  "dependencies": {
+    "next": "^16.0.10",
+    "react": "^19.2.3"
+  },
+  "devDependencies": {
+    "@packages/typescript-config": "workspace:*",
+    "@types/node": "^25.0.1",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3"
+  },
+  "main": "./index.ts",
+  "private": true,
+  "scripts": {
+    "clean": "git clean -xdf .cache .turbo dist node_modules",
+    "typecheck": "tsc --noEmit --emitDeclarationOnly false"
+  },
+  "types": "./index.ts"
 }
