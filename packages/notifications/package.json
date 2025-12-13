@@ -1,0 +1,22 @@
+{
+    "name": "@packages/notifications",
+    "private": true,
+    "scripts": {
+        "clean": "git clean -xdf .cache .turbo dist node_modules",
+        "typecheck": "tsc --noEmit --emitDeclarationOnly false"
+    },
+    "dependencies": {
+        "@knocklabs/node": "^1.25.0",
+        "@knocklabs/react": "^0.9.5",
+        "@novu/nextjs": "3.11.0",
+        "@t3-oss/env-nextjs": "^0.13.8",
+        "react": "19.2.3"
+        },
+    "devDependencies": {
+        "@packages/typescript-config": "workspace:*",
+        "@types/node": "25.0.1",
+        "@types/react": "19.2.7",
+        "@types/react-dom": "19.2.3",
+        "typescript": "^5.9.3"
+    }
+}

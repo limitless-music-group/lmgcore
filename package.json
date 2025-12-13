@@ -5,7 +5,7 @@
     "lmgcore": "dist/index.js"
   },
   "dependencies": {
-    "effect": "^3.19.11",
+    "effect": "^3.19.12",
     "zod": "^4.1.13"
   },
   "devDependencies": {
@@ -42,12 +42,12 @@
     "bump-ui": "npx shadcn@latest add --all overwrite -c packages/design-system",
     "check": "npx ultracite@latest check",
     "clean": "git clean -xdf node_modules",
+    "db:generate": "cd packages/database && npx prisma format && npx prisma generate",
+    "db:migrate": "cd packages/database && npx prisma format && npx prisma generate && npx prisma db push",
     "dev": "turbo dev",
     "fix": "npx ultracite@latest fix",
     "fix-mismatches": "syncpack fix-mismatches",
     "format-package-json": "syncpack format",
-    "db:generate": "cd packages/database && npx prisma format && npx prisma generate",
-    "db:migrate": "cd packages/database && npx prisma format && npx prisma generate && npx prisma db push",
     "test": "turbo test",
     "translate": "turbo translate"
   },

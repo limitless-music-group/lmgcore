@@ -1,12 +1,12 @@
 {
   "name": "@packages/auth",
   "dependencies": {
+    "@casl/ability": "^6.7.3",
     "@packages/database": "workspace:*",
     "@t3-oss/env-nextjs": "^0.13.8",
-    "@casl/ability": "^6.7.3",
     "better-auth": "^1.4.6",
-    "next-themes": "^0.4.6",
     "next": "^16.0.10",
+    "next-themes": "^0.4.6",
     "react": "^19.2.3",
     "server-only": "^0.0.1"
   },
@@ -19,9 +19,8 @@
   },
   "private": true,
   "scripts": {
+    "auth:generate": "npx @better-auth/cli@latest generate --config ./auth.ts --output ../../packages/database/prisma/schema.prisma --yes",
     "clean": "git clean -xdf .cache .turbo dist node_modules",
-    "typecheck": "tsc --noEmit --emitDeclarationOnly false",
-    "auth:generate": "npx @better-auth/cli@latest generate --config ./auth.ts --output ../../packages/database/prisma/schema.prisma --yes"
-
+    "typecheck": "tsc --noEmit --emitDeclarationOnly false"
   }
 }

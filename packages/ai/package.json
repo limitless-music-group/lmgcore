@@ -1,0 +1,22 @@
+{
+    "name": "@packages/ai",
+    "private": true,
+  "scripts": {
+    "clean": "git clean -xdf .cache .turbo dist node_modules",
+    "typecheck": "tsc --noEmit --emitDeclarationOnly false"
+  },
+  "dependencies": {
+    "@ai-sdk/openai": "^2.0.86",
+    "@t3-oss/env-nextjs": "^0.13.8",
+    "ai": "^5.0.113",
+    "react": "19.2.3",
+    "streamdown": "^1.6.10",
+    "tailwind-merge": "^3.4.0"
+  },
+  "devDependencies": {
+    "@packages/typescript-config": "workspace:*",
+    "@types/node": "25.0.1",
+    "@types/react": "19.2.7",
+    "@types/react-dom": "19.2.3"
+  }
+}
