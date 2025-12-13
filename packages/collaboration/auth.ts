@@ -1,4 +1,4 @@
-import "server-only";
+// import "server-only";
 import { Liveblocks as LiveblocksNode } from "@liveblocks/node";
 import { keys } from "./keys";
 

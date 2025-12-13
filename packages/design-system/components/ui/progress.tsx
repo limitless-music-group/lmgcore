@@ -1,15 +1,15 @@
 "use client"
 
 import { Progress as ProgressPrimitive } from "radix-ui"
-import * as React from "react"
 
 import { cn } from "@packages/design-system/lib/utils"
+import { ComponentProps } from "react"
 
 function Progress({
   className,
   value,
   ...props
-}: React.ComponentProps<typeof ProgressPrimitive.Root>) {
+}: ComponentProps<typeof ProgressPrimitive.Root>) {
   return (
     <ProgressPrimitive.Root
       data-slot="progress"
@@ -29,3 +29,4 @@ function Progress({
 }
 
 export { Progress }
+

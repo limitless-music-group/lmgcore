@@ -1,14 +1,14 @@
 "use client"
 
 import { Switch as SwitchPrimitive } from "radix-ui"
-import * as React from "react"
 
 import { cn } from "@packages/design-system/lib/utils"
+import { ComponentProps } from "react"
 
 function Switch({
   className,
   ...props
-}: React.ComponentProps<typeof SwitchPrimitive.Root>) {
+}: ComponentProps<typeof SwitchPrimitive.Root>) {
   return (
     <SwitchPrimitive.Root
       data-slot="switch"
@@ -29,3 +29,4 @@ function Switch({
 }
 
 export { Switch }
+

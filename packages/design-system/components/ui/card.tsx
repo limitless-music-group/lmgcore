@@ -1,5 +1,3 @@
-import * as React from "react"
-
 import { cn } from "@packages/design-system/lib/utils"
 
 function Card({ className, ...props }: React.ComponentProps<"div">) {
@@ -82,6 +80,6 @@ function CardFooter({ className, ...props }: React.ComponentProps<"div">) {
 }
 
 export {
-    Card, CardAction, CardContent, CardDescription, CardFooter, CardHeader, CardTitle
+  Card, CardAction, CardContent, CardDescription, CardFooter, CardHeader, CardTitle
 }
 
